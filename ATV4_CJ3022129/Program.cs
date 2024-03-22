@@ -125,9 +125,12 @@ switch (opc)
                     Console.WriteLine("\nDezembro, contém 31 dias");
                     break;
             }
+        }
             if (ano == 2)
             {
-                switch (ano)
+            Console.WriteLine("\nDigite algum número de 1 a 12 corresponde aos meses do ano");
+            mes = int.Parse(Console.ReadLine());
+            switch (ano)
                 {
                     case 1:
                         Console.WriteLine("\nJaneiro, contém 31 dias.");
@@ -168,7 +171,7 @@ switch (opc)
                 }
             }
             break;
-        }
+        
         break;
 
 
@@ -343,60 +346,62 @@ switch (opc)
                 Console.WriteLine("Seu sálario antigo era de {0}, com o novo aumenta de 14,6 seu salário agora é de {1}, com uma diferença de {2}", salario, saw, desconto);
                 break;
             case 8:
-                desconto = (salario / 100) * 43.5f ;
+                desconto = (salario / 100) * 43.5f;
                 sal = salario - desconto;
                 saw = salario + (salario / 100) * 43.5f;
                 Console.WriteLine("Seu sálario antigo era de {0}, com o novo aumenta de 43.5, seu salário agora é de {1}, com uma diferença de {2}", salario, saw, desconto);
                 break;
 
-        } break;
-float sala, imposto;
-float sal_liq;
-int imp;
-case 6:
+        }
+        break;
+        float sala, imposto;
+        float sal_liq;
+        int imp;
+    case 6:
 
-Console.WriteLine("Informe o seu sálario para calcular o imposto de renda");
-Console.WriteLine("1 - Até 1.903,98");
-Console.WriteLine("2 - Entre 1.903,98 e 2.826,66");
-Console.WriteLine("3 - Entre 2.826,66 e 3.751,06");
-Console.WriteLine("4 - Entre R$ 3.751,06 e R$ 4.664,68");
-Console.WriteLine("5 - Acima de R$ 4.664,68");
-imp = int.Parse(Console.ReadLine());
+        Console.WriteLine("Informe o seu sálario para calcular o imposto de renda");
+        Console.WriteLine("1 - Até 1.903,98");
+        Console.WriteLine("2 - Entre 1.903,98 e 2.826,66");
+        Console.WriteLine("3 - Entre 2.826,66 e 3.751,06");
+        Console.WriteLine("4 - Entre R$ 3.751,06 e R$ 4.664,68");
+        Console.WriteLine("5 - Acima de R$ 4.664,68");
+        imp = int.Parse(Console.ReadLine());
 
-switch (imp){
-case 1:
-Console.WriteLine("Isento de imposto de renda");
-break;
+        switch (imp)
+        {
+            case 1:
+                Console.WriteLine("Isento de imposto de renda");
+                break;
 
-case 2:
-Console.WriteLine ("Digite o valor exato do seu sálario bruto");
-sala = float.Parse(Console.ReadLine());
-imposto= (sala/100f) * 7.5f;
-sal_liq= sala-imposto;
-Console.WriteLine("O imposto dado é de {0} R$, e seu sálario líquido vai ficar {1} R$", imposto, sal_liq);
-break;
-case 3:
-Console.WriteLine ("Digite o valor exato do seu sálario bruto");
-sala = float.Parse(Console.ReadLine());
-imposto= (sala/100f) * 15f;
-sal_liq= sala-imposto;
-Console.WriteLine("O imposto dado é de {0} R$, e seu sálario líquido vai ficar {1} R$", imposto, sal_liq);
-break;
-case 4:
-Console.WriteLine ("Digite o valor exato do seu sálario bruto");
-sala = float.Parse(Console.ReadLine());
-imposto= (sala/100f) * 22.5f;
-sal_liq= sala-imposto;
-Console.WriteLine("O imposto dado é de {0} R$, e seu sálario líquido vai ficar {1} R$", imposto, sal_liq);
-break;
-case 5:
-Console.WriteLine ("Digite o valor exato do seu sálario bruto");
-sala = float.Parse(Console.ReadLine());
-imposto= (sala/100f) * 27.5f;
-sal_liq= sala-imposto;
-Console.WriteLine("O imposto dado é de {0} R$, e seu sálario líquido vai ficar {1} R$", imposto, sal_liq);
-break;
-} break;
+            case 2:
+                Console.WriteLine("Digite o valor exato do seu sálario bruto");
+                sala = float.Parse(Console.ReadLine());
+                imposto = (sala / 100f) * 7.5f;
+                sal_liq = sala - imposto;
+                Console.WriteLine("O imposto dado é de {0} R$, e seu sálario líquido vai ficar {1} R$", imposto, sal_liq);
+                break;
+            case 3:
+                Console.WriteLine("Digite o valor exato do seu sálario bruto");
+                sala = float.Parse(Console.ReadLine());
+                imposto = (sala / 100f) * 15f;
+                sal_liq = sala - imposto;
+                Console.WriteLine("O imposto dado é de {0} R$, e seu sálario líquido vai ficar {1} R$", imposto, sal_liq);
+                break;
+            case 4:
+                Console.WriteLine("Digite o valor exato do seu sálario bruto");
+                sala = float.Parse(Console.ReadLine());
+                imposto = (sala / 100f) * 22.5f;
+                sal_liq = sala - imposto;
+                Console.WriteLine("O imposto dado é de {0} R$, e seu sálario líquido vai ficar {1} R$", imposto, sal_liq);
+                break;
+            case 5:
+                Console.WriteLine("Digite o valor exato do seu sálario bruto");
+                sala = float.Parse(Console.ReadLine());
+                imposto = (sala / 100f) * 27.5f;
+                sal_liq = sala - imposto;
+                Console.WriteLine("O imposto dado é de {0} R$, e seu sálario líquido vai ficar {1} R$", imposto, sal_liq);
+                break;
+        }
+        break;
 }
-}
-}
+
